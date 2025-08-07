@@ -1,0 +1,29 @@
+
+package com.mycompany.rey;
+
+import java.util.Scanner;
+
+public class Rey {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner (System.in);
+        
+        int currentYear = 2025 ;
+        
+        
+        System.out.print("ENTER YOUR FULLNAME:");
+        String fullName = scanner.nextLine();
+        
+         System.out.print("ENTER YOUR AGE:");
+        int age = scanner.nextInt();
+        
+        int Year = currentYear +( 60 - age);
+        
+            System.out.println("Hello, I am " + fullName + " and I am " + age + "Yrs Old");
+                System.out.println("I will turn 60 " + Year + ".");
+                
+                scanner.close();
+                     
+    }
+}
+
